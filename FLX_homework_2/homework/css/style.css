@@ -139,11 +139,11 @@ h2 + p {
     color: red;
 }
 
-li.box:nth-child(odd) {
+.blocks li.box:nth-child(odd) {
     border: 10px solid #fff;
 }
 
-li.box:nth-child(even) {
+.blocks li.box:nth-child(even) {
     border: 10px solid #f5f5f5;
     background-color: #f5f5f5;
 }
