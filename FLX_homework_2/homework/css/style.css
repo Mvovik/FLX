@@ -162,11 +162,8 @@ h2 + p {
   font-size: 25px;
 }
 
-form {
-  text-align: right;
-}
-
 button.submit-btn {
+  float: right;
   border: 1px solid #87CEFA;
   border-radius: 0;
   padding: 15px 50px;
