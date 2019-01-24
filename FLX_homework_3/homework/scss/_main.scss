@@ -105,7 +105,7 @@ header {
 
 main {
     margin: 0 auto;
-    width: 960px; 
+    width: 960px;
 }
 
 .toolbar {
@@ -117,7 +117,7 @@ main {
         padding-left: 15px;
 
         &::placeholder {
-            
+
             color: $mainFontColor;
         }
     }
@@ -179,7 +179,7 @@ article {
         @include uppercase;
         margin: 0;
         margin-top: 7px;
-        color:  $postH3Color;
+        color: $postH3Color;
     }
 
     p {
@@ -191,7 +191,7 @@ article {
 
 .about {
     padding: 15px;
-    
+
     h1 {
         @include uppercase;
         margin: 0;
@@ -204,7 +204,7 @@ article {
         line-height: $postPLineheight;
         color: $mainFontColor;
 
-        &:nth-child(2){
+        &:nth-child(2) {
             margin-top: 0;
         }
     }
@@ -259,7 +259,7 @@ form {
 }
 
 .form-contact {
-    
+
     .btn {
         @include button;
         float: right;
