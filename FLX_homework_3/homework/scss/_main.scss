@@ -1,1 +1,280 @@
-// Write your styles here
+@mixin header-background {
+    background-image: $background-img;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+@mixin nav-menu-border {
+    border-right: 2px solid $navBorderColor;
+}
+
+@mixin uppercase {
+    text-transform: uppercase;
+}
+
+@mixin button {
+    @include uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    color: $buttonFontColor;
+    font: $buttonFont;
+    background-color: $buttonBgColor;
+}
+
+@mixin input {
+    border: 1px solid $inputBorderColor;
+    background-color: transparent;
+    width: 185px;
+    height: 35px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: $bodyBackground;
+    font: $bodyFont;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    @include header-background;
+
+    section {
+        text-align: center;
+
+        h1 {
+            @include uppercase;
+            margin-top: 10%;
+            font: $h1Font;
+            color: $headerFontColor;
+        }
+
+        a {
+            &.btn-top {
+                @include button;
+                margin: 0 auto;
+
+                &:hover {
+                    background-color: lighten($buttonBgColor, 5%);
+                }
+            }
+        }
+
+    }
+}
+
+.top-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        width: 16%;
+    }
+
+    nav {
+        display: flex;
+
+        a {
+            @include nav-menu-border;
+            @include uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 280px;
+            height: 55px;
+            text-decoration: none;
+            font: $navFont;
+            color: $headerFontColor;
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+}
+
+main {
+    margin: 0 auto;
+    width: 960px; 
+}
+
+.toolbar {
+    margin-top: 20px;
+    text-align: right;
+
+    input {
+        @include input;
+        padding-left: 15px;
+
+        &::placeholder {
+            
+            color: $mainFontColor;
+        }
+    }
+}
+
+.post-list {
+
+    h1 {
+        @include uppercase;
+        text-align: right;
+        color: $mainFontColor;
+        margin-bottom: 0;
+    }
+}
+
+article {
+    display: flex;
+    margin: 0 0 20px 0;
+    max-height: 305px;
+    background-color: $articleBgColor;
+
+    img {
+        padding: 10px;
+        max-width: 285px;
+    }
+
+    .post {
+        padding: 15px 10px 10px 0;
+    }
+
+    .btn {
+        @include button;
+        float: right;
+        margin-right: 20px;
+        border: none;
+    }
+}
+
+.post-description {
+    position: relative;
+    padding: 0 0 10px 7px;
+    font: 13px $fontStack;
+    color: $postDescrColor;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $mainThemeColor;
+    }
+}
+
+.post {
+
+    h3 {
+        @include uppercase;
+        margin: 0;
+        margin-top: 7px;
+        color:  $postH3Color;
+    }
+
+    p {
+        margin-top: 0;
+        color: $mainFontColor;
+        line-height: $postPLineheight;
+    }
+}
+
+.about {
+    padding: 15px;
+    
+    h1 {
+        @include uppercase;
+        margin: 0;
+        padding-top: 40px;
+        color: $mainFontColor;
+        text-align: right;
+    }
+
+    p {
+        line-height: $postPLineheight;
+        color: $mainFontColor;
+
+        &:nth-child(2){
+            margin-top: 0;
+        }
+    }
+}
+
+.contact-form {
+    text-align: right;
+
+    h1 {
+        @include uppercase;
+        margin: 0;
+        margin-top: 30px;
+        color: $mainFontColor;
+    }
+
+    h4 {
+        @include uppercase;
+        margin: 0;
+        color: $mainFontColor;
+    }
+}
+
+form {
+    color: $postH3Color;
+
+    input,
+    textarea {
+        border: 1px solid $mainThemeColor;
+        background-color: transparent;
+    }
+}
+
+.contact-fields {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    .form-control {
+        width: 470px;
+        height: 45px;
+        margin: 5px 0;
+    }
+}
+
+.flex-grow {
+    margin-top: 20px;
+
+    .form-control {
+        width: 99%;
+        margin: 5px 0;
+    }
+}
+
+.form-contact {
+    
+    .btn {
+        @include button;
+        float: right;
+        margin: 10px 0 10px 0;
+        border: none;
+    }
+}
+
+footer {
+    width: 100%;
+
+    span {
+        display: block;
+        margin: 70px 0 15px 15px;
+        font: 13px $fontStack;
+        color: $mainFontColor;
+    }
+}

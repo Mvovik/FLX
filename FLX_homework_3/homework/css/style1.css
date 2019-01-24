@@ -1,0 +1,200 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  font: 15px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+header {
+  background-image: url(../img/header_background_v1.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 100vh; }
+  header section {
+    text-align: center; }
+    header section h1 {
+      text-transform: uppercase;
+      margin-top: 10%;
+      font: bold 24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+      color: #fff; }
+    header section a.btn-top {
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 40px;
+      text-decoration: none;
+      color: #fff;
+      font: normal 15px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+      background-color: #01acac;
+      margin: 0 auto; }
+      header section a.btn-top:hover {
+        background-color: #01c5c5; }
+
+.top-wrapper {
+  display: flex;
+  justify-content: space-between; }
+  .top-wrapper .logo {
+    width: 16%; }
+  .top-wrapper nav {
+    display: flex; }
+    .top-wrapper nav a {
+      border-right: 2px solid #607d8b;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 280px;
+      height: 55px;
+      text-decoration: none;
+      font: bold 15px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+      color: #fff; }
+      .top-wrapper nav a:last-child {
+        border: none; }
+
+main {
+  margin: 0 auto;
+  width: 960px; }
+
+.toolbar {
+  margin-top: 20px;
+  text-align: right; }
+  .toolbar input {
+    border: 1px solid #607d8b;
+    background-color: transparent;
+    width: 185px;
+    height: 35px;
+    padding-left: 15px; }
+    .toolbar input::placeholder {
+      color: #000; }
+
+.post-list h1 {
+  text-transform: uppercase;
+  text-align: right;
+  color: #000;
+  margin-bottom: 0; }
+
+article {
+  display: flex;
+  margin: 0 0 20px 0;
+  max-height: 305px;
+  background-color: #efefef; }
+  article img {
+    padding: 10px;
+    max-width: 285px; }
+  article .post {
+    padding: 15px 10px 10px 0; }
+  article .btn {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    color: #fff;
+    font: normal 15px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+    background-color: #01acac;
+    float: right;
+    margin-right: 20px;
+    border: none; }
+
+.post-description {
+  position: relative;
+  padding: 0 0 10px 7px;
+  font: 13px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  color: red; }
+  .post-description:after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #607d8b; }
+
+.post h3 {
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 7px;
+  color: #0097a7; }
+.post p {
+  margin-top: 0;
+  color: #000;
+  line-height: 1.8; }
+
+.about {
+  padding: 15px; }
+  .about h1 {
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 40px;
+    color: #000;
+    text-align: right; }
+  .about p {
+    line-height: 1.8;
+    color: #000; }
+    .about p:nth-child(2) {
+      margin-top: 0; }
+
+.contact-form {
+  text-align: right; }
+  .contact-form h1 {
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 30px;
+    color: #000; }
+  .contact-form h4 {
+    text-transform: uppercase;
+    margin: 0;
+    color: #000; }
+
+form {
+  color: #0097a7; }
+  form input,
+  form textarea {
+    border: 1px solid #607d8b;
+    background-color: transparent; }
+
+.contact-fields {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px; }
+  .contact-fields .form-control {
+    width: 470px;
+    height: 45px;
+    margin: 5px 0; }
+
+.flex-grow {
+  margin-top: 20px; }
+  .flex-grow .form-control {
+    width: 99%;
+    margin: 5px 0; }
+
+.form-contact .btn {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  text-decoration: none;
+  color: #fff;
+  font: normal 15px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  background-color: #01acac;
+  float: right;
+  margin: 10px 0 10px 0;
+  border: none; }
+
+footer {
+  width: 100%; }
+  footer span {
+    display: block;
+    margin: 70px 0 15px 15px;
+    font: 13px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+    color: #000; }
