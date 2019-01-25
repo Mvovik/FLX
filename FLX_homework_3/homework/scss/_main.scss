@@ -7,38 +7,35 @@
 }
 
 @mixin nav-menu-border {
-    border-right: 2px solid $navBorderColor;
-}
-
-@mixin uppercase {
-    text-transform: uppercase;
+    border-right: 2px solid $nav-border-color;
 }
 
 @mixin button {
-    @include uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
     height: 40px;
     text-decoration: none;
-    color: $buttonFontColor;
-    font: $buttonFont;
-    background-color: $buttonBgColor;
+    text-transform: uppercase;
+    color: $button-font-color;
+    font: $button-font;
+    background-color: $button-bg-color;
 }
 
 @mixin input {
-    border: 1px solid $inputBorderColor;
+    border: 1px solid $input-border-color;
     background-color: transparent;
     width: 185px;
     height: 35px;
+    padding-left: 15px;
 }
 
 body {
     padding: 0;
     margin: 0;
-    background: $bodyBackground;
-    font: $bodyFont;
+    background: $body-back-color;
+    font: $body-font;
 }
 
 img {
@@ -53,10 +50,10 @@ header {
         text-align: center;
 
         h1 {
-            @include uppercase;
             margin-top: 10%;
-            font: $h1Font;
-            color: $headerFontColor;
+            font: $h1-font;
+            text-transform: uppercase;
+            color: $header-font-color;
         }
 
         a {
@@ -65,7 +62,7 @@ header {
                 margin: 0 auto;
 
                 &:hover {
-                    background-color: lighten($buttonBgColor, 5%);
+                    background-color: lighten($button-bg-color, 5%);
                 }
             }
         }
@@ -86,15 +83,15 @@ header {
 
         a {
             @include nav-menu-border;
-            @include uppercase;
             display: flex;
             justify-content: center;
             align-items: center;
             width: 280px;
             height: 55px;
             text-decoration: none;
-            font: $navFont;
-            color: $headerFontColor;
+            text-transform: uppercase;
+            font: $nav-font;
+            color: $header-font-color;
 
             &:last-child {
                 border: none;
@@ -114,11 +111,10 @@ main {
 
     input {
         @include input;
-        padding-left: 15px;
 
         &::placeholder {
 
-            color: $mainFontColor;
+            color: $main-font-color;
         }
     }
 }
@@ -126,9 +122,9 @@ main {
 .post-list {
 
     h1 {
-        @include uppercase;
         text-align: right;
-        color: $mainFontColor;
+        text-transform: uppercase;
+        color: $main-font-color;
         margin-bottom: 0;
     }
 }
@@ -137,7 +133,7 @@ article {
     display: flex;
     margin: 0 0 20px 0;
     max-height: 305px;
-    background-color: $articleBgColor;
+    background-color: $article-bg-color;
 
     img {
         padding: 10px;
@@ -153,14 +149,18 @@ article {
         float: right;
         margin-right: 20px;
         border: none;
+
+        &:hover {
+            background-color: lighten($button-bg-color, 5%);
+        }
     }
 }
 
 .post-description {
     position: relative;
     padding: 0 0 10px 7px;
-    font: 13px $fontStack;
-    color: $postDescrColor;
+    font: 13px $font-stack;
+    color: $post-desc-color;
 
     &:after {
         content: '';
@@ -169,23 +169,23 @@ article {
         left: 0;
         width: 100%;
         height: 1px;
-        background-color: $mainThemeColor;
+        background-color: $main-theme-color;
     }
 }
 
 .post {
 
     h3 {
-        @include uppercase;
         margin: 0;
         margin-top: 7px;
-        color: $postH3Color;
+        text-transform: uppercase;
+        color: $post-h3-color;
     }
 
     p {
         margin-top: 0;
-        color: $mainFontColor;
-        line-height: $postPLineheight;
+        color: $main-font-color;
+        line-height: $post-p-line-height;
     }
 }
 
@@ -193,16 +193,16 @@ article {
     padding: 15px;
 
     h1 {
-        @include uppercase;
         margin: 0;
         padding-top: 40px;
-        color: $mainFontColor;
+        color: $main-font-color;
         text-align: right;
+        text-transform: uppercase;
     }
 
     p {
-        line-height: $postPLineheight;
-        color: $mainFontColor;
+        line-height: $post-p-line-height;
+        color: $main-font-color;
 
         &:nth-child(2) {
             margin-top: 0;
@@ -214,25 +214,25 @@ article {
     text-align: right;
 
     h1 {
-        @include uppercase;
         margin: 0;
         margin-top: 30px;
-        color: $mainFontColor;
+        color: $main-font-color;
+        text-transform: uppercase;
     }
 
     h4 {
-        @include uppercase;
         margin: 0;
-        color: $mainFontColor;
+        color: $main-font-color;
+        text-transform: uppercase;
     }
 }
 
 form {
-    color: $postH3Color;
+    color: $post-h3-color;
 
     input,
     textarea {
-        border: 1px solid $mainThemeColor;
+        border: 1px solid $main-theme-color;
         background-color: transparent;
     }
 }
@@ -249,7 +249,7 @@ form {
     }
 }
 
-.flex-grow {
+.text-field {
     margin-top: 20px;
 
     .form-control {
@@ -275,7 +275,7 @@ footer {
         display: block;
         clear: both;
         margin: 15px;
-        font: 13px $fontStack;
-        color: $mainFontColor;
+        font: 13px $font-stack;
+        color: $main-font-color;
     }
 }

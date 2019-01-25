@@ -17,18 +17,18 @@ header {
   header section {
     text-align: center; }
     header section h1 {
-      text-transform: uppercase;
       margin-top: 10%;
       font: bold 24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+      text-transform: uppercase;
       color: #fff; }
     header section a.btn-top {
-      text-transform: uppercase;
       display: flex;
       justify-content: center;
       align-items: center;
       width: 200px;
       height: 40px;
       text-decoration: none;
+      text-transform: uppercase;
       color: #fff;
       font: normal 15px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
       background-color: #01acac;
@@ -45,13 +45,13 @@ header {
     display: flex; }
     .top-wrapper nav a {
       border-right: 2px solid #607d8b;
-      text-transform: uppercase;
       display: flex;
       justify-content: center;
       align-items: center;
       width: 280px;
       height: 55px;
       text-decoration: none;
+      text-transform: uppercase;
       font: bold 15px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
       color: #fff; }
       .top-wrapper nav a:last-child {
@@ -74,8 +74,8 @@ main {
       color: #000; }
 
 .post-list h1 {
-  text-transform: uppercase;
   text-align: right;
+  text-transform: uppercase;
   color: #000;
   margin-bottom: 0; }
 
@@ -90,19 +90,21 @@ article {
   article .post {
     padding: 15px 10px 10px 0; }
   article .btn {
-    text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
     height: 40px;
     text-decoration: none;
+    text-transform: uppercase;
     color: #fff;
     font: normal 15px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
     background-color: #01acac;
     float: right;
     margin-right: 20px;
     border: none; }
+    article .btn:hover {
+      background-color: #01c5c5; }
 
 .post-description {
   position: relative;
@@ -119,9 +121,9 @@ article {
     background-color: #607d8b; }
 
 .post h3 {
-  text-transform: uppercase;
   margin: 0;
   margin-top: 7px;
+  text-transform: uppercase;
   color: #0097a7; }
 .post p {
   margin-top: 0;
@@ -131,11 +133,11 @@ article {
 .about {
   padding: 15px; }
   .about h1 {
-    text-transform: uppercase;
     margin: 0;
     padding-top: 40px;
     color: #000;
-    text-align: right; }
+    text-align: right;
+    text-transform: uppercase; }
   .about p {
     line-height: 1.8;
     color: #000; }
@@ -145,14 +147,14 @@ article {
 .contact-form {
   text-align: right; }
   .contact-form h1 {
-    text-transform: uppercase;
     margin: 0;
     margin-top: 30px;
-    color: #000; }
+    color: #000;
+    text-transform: uppercase; }
   .contact-form h4 {
-    text-transform: uppercase;
     margin: 0;
-    color: #000; }
+    color: #000;
+    text-transform: uppercase; }
 
 form {
   color: #0097a7; }
@@ -170,20 +172,20 @@ form {
     height: 45px;
     margin: 5px 0; }
 
-.flex-grow {
+.text-field {
   margin-top: 20px; }
-  .flex-grow .form-control {
+  .text-field .form-control {
     width: 99%;
     margin: 5px 0; }
 
 .form-contact .btn {
-  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 200px;
   height: 40px;
   text-decoration: none;
+  text-transform: uppercase;
   color: #fff;
   font: normal 15px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
   background-color: #01acac;

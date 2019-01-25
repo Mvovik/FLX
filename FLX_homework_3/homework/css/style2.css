@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
   background: #efefef;
-  font: 18px Palatino Linotype, Book Antiqua, Palatino, serif; }
+  font: 18px "Palatino Linotype", "Book Antiqua", Palatino, serif; }
 
 img {
   max-width: 100%;
@@ -17,20 +17,20 @@ header {
   header section {
     text-align: center; }
     header section h1 {
-      text-transform: uppercase;
       margin-top: 10%;
-      font: bold 26px Palatino Linotype, Book Antiqua, Palatino, serif;
+      font: bold 26px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+      text-transform: uppercase;
       color: #ff5722; }
     header section a.btn-top {
-      text-transform: uppercase;
       display: flex;
       justify-content: center;
       align-items: center;
       width: 200px;
       height: 40px;
       text-decoration: none;
+      text-transform: uppercase;
       color: #fff;
-      font: 15px Palatino Linotype, Book Antiqua, Palatino, serif;
+      font: normal "Palatino Linotype", "Book Antiqua", Palatino, serif;
       background-color: #0401ac;
       margin: 0 auto; }
       header section a.btn-top:hover {
@@ -45,14 +45,14 @@ header {
     display: flex; }
     .top-wrapper nav a {
       border-right: 2px solid #cfd8dc;
-      text-transform: uppercase;
       display: flex;
       justify-content: center;
       align-items: center;
       width: 280px;
       height: 55px;
       text-decoration: none;
-      font: 18px Palatino Linotype, Book Antiqua, Palatino, serif;
+      text-transform: uppercase;
+      font: 18px "Palatino Linotype", "Book Antiqua", Palatino, serif;
       color: #ff5722; }
       .top-wrapper nav a:last-child {
         border: none; }
@@ -74,8 +74,8 @@ main {
       color: #757575; }
 
 .post-list h1 {
-  text-transform: uppercase;
   text-align: right;
+  text-transform: uppercase;
   color: #757575;
   margin-bottom: 0; }
 
@@ -90,24 +90,26 @@ article {
   article .post {
     padding: 15px 10px 10px 0; }
   article .btn {
-    text-transform: uppercase;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
     height: 40px;
     text-decoration: none;
+    text-transform: uppercase;
     color: #fff;
-    font: 15px Palatino Linotype, Book Antiqua, Palatino, serif;
+    font: normal "Palatino Linotype", "Book Antiqua", Palatino, serif;
     background-color: #0401ac;
     float: right;
     margin-right: 20px;
     border: none; }
+    article .btn:hover {
+      background-color: #0501c5; }
 
 .post-description {
   position: relative;
   padding: 0 0 10px 7px;
-  font: 13px Palatino Linotype, Book Antiqua, Palatino, serif;
+  font: 13px "Palatino Linotype", "Book Antiqua", Palatino, serif;
   color: #c3c3d4; }
   .post-description:after {
     content: '';
@@ -119,9 +121,9 @@ article {
     background-color: #cfd8dc; }
 
 .post h3 {
-  text-transform: uppercase;
   margin: 0;
   margin-top: 7px;
+  text-transform: uppercase;
   color: #607da9; }
 .post p {
   margin-top: 0;
@@ -131,11 +133,11 @@ article {
 .about {
   padding: 15px; }
   .about h1 {
-    text-transform: uppercase;
     margin: 0;
     padding-top: 40px;
     color: #757575;
-    text-align: right; }
+    text-align: right;
+    text-transform: uppercase; }
   .about p {
     line-height: 1.4;
     color: #757575; }
@@ -145,14 +147,14 @@ article {
 .contact-form {
   text-align: right; }
   .contact-form h1 {
-    text-transform: uppercase;
     margin: 0;
     margin-top: 30px;
-    color: #757575; }
+    color: #757575;
+    text-transform: uppercase; }
   .contact-form h4 {
-    text-transform: uppercase;
     margin: 0;
-    color: #757575; }
+    color: #757575;
+    text-transform: uppercase; }
 
 form {
   color: #607da9; }
@@ -170,22 +172,22 @@ form {
     height: 45px;
     margin: 5px 0; }
 
-.flex-grow {
+.text-field {
   margin-top: 20px; }
-  .flex-grow .form-control {
+  .text-field .form-control {
     width: 99%;
     margin: 5px 0; }
 
 .form-contact .btn {
-  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 200px;
   height: 40px;
   text-decoration: none;
+  text-transform: uppercase;
   color: #fff;
-  font: 15px Palatino Linotype, Book Antiqua, Palatino, serif;
+  font: normal "Palatino Linotype", "Book Antiqua", Palatino, serif;
   background-color: #0401ac;
   float: right;
   margin: 10px 0 10px 0;
@@ -197,5 +199,5 @@ footer {
     display: block;
     clear: both;
     margin: 15px;
-    font: 13px Palatino Linotype, Book Antiqua, Palatino, serif;
+    font: 13px "Palatino Linotype", "Book Antiqua", Palatino, serif;
     color: #757575; }
