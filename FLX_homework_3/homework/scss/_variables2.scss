@@ -1,35 +1,35 @@
-$fontStack: Palatino Linotype, Book Antiqua, Palatino, serif;
+$font-stack: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
-$bodyFont: 18px $fontStack;
+$body-font: 18px $font-stack;
 
-$bodyBackground: #efefef;
+$body-back-color: #efefef;
 
-$mainThemeColor: #cfd8dc;
+$main-theme-color: #cfd8dc;
 
 $background-img: url(../img/header_background_v2.jpg);
 
-$navFont: 18px $fontStack;
+$nav-font: 18px $font-stack;
 
-$headerFontColor: #ff5722;
+$header-font-color: #ff5722;
 
-$navBorderColor: $mainThemeColor;
+$nav-border-color: $main-theme-color;
 
-$h1Font: bold 26px $fontStack;
+$h1-font: bold 26px $font-stack;
 
-$buttonFont: 15px $fontStack;
+$button-font: normal $font-stack;
 
-$buttonFontColor: #fff;
+$button-font-color: #fff;
 
-$buttonBgColor: #0401ac;
+$button-bg-color: #0401ac;
 
-$inputBorderColor: $mainThemeColor;
+$input-border-color: $main-theme-color;
 
-$articleBgColor: #fff;
+$article-bg-color: #fff;
 
-$postDescrColor: #c3c3d4;
+$post-desc-color: #c3c3d4;
 
-$postH3Color: #607da9;
+$post-h3-color: #607da9;
 
-$mainFontColor: #757575;
+$main-font-color: #757575;
 
-$postPLineheight: 1.4;
+$post-p-line-height: 1.4;
