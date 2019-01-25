@@ -273,7 +273,8 @@ footer {
 
     span {
         display: block;
-        margin: 70px 0 15px 15px;
+        clear: both;
+        margin: 15px;
         font: 13px $fontStack;
         color: $mainFontColor;
     }
