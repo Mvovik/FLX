@@ -303,21 +303,21 @@ footer {
     padding-right: 15px;
 }
 
-.column-1, 
-.column-2, 
-.column-3, 
+.column-1,
+.column-2,
+.column-3,
 .column-4 {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
 }
 
-.column-1, 
+.column-1,
 .column-2 {
     width: 35%;
 }
 
-.column-2 p{
+.column-2 p {
     font-style: italic;
 }
 
@@ -413,6 +413,7 @@ footer h4 {
 .main-navigation li {
     padding: 0 1vw;
 }
+
 .main-navigation a:hover {
-    color:rgba(0, 0, 0, 0.623);
+    color: rgba(0, 0, 0, 0.623);
 }
