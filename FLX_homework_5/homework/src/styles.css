@@ -1,32 +1,406 @@
-/*
- * Feel free to change name of colors if you need it
- * Feel free to add new colors if you need it
- */
-:root {
-  --bg-color--dark: #0b192f;
-  --bg-color--header: #162b4d;
-  --link: #fff;
-  --link--hover: #b8b8b8;
-  --bg-footer-color: #162b4d;;
-}
-
 body {
   font-family: roboto;
-}
-.post-1 {
-	background: #B71757;
-}
-.post-2 {
-	background: #0D7E71;
-}
-.post-3 {
-	background: #b1660e;
-}
-.post-4 {
-	background: #d12767;
-}
-.post-5 {
-	background: #2d95bb;
+  background-color: #0b192f;
+  color: #fff;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
 }
 
-/* Your styles go here */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h2,
+h3 {
+  font-weight: 100;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #162b4d;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-navigation-wrapper {
+  padding-right: 5%;
+}
+
+.main-navigation a,
+.site-navigation {
+  text-decoration: none;
+  list-style: none;
+}
+
+.main-header-logo {
+  color: #fff;
+  font-size: 42px;
+  padding-left: 2%;
+}
+
+.main-header-logo span {
+  color: #B71757;
+}
+
+.site-navigation {
+  display: flex;
+  max-width: 460px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation a {
+  display: block;
+  color: #fff;
+  font-size: 21px;
+  padding: 40px 20px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  background-color: #283d5f;
+  color: #b8b8b8;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1%;
+}
+
+.aside-wrapper {
+  width: 20%;
+}
+
+.news-wrapper {
+  max-width: 360px;
+  margin-bottom: 5%;
+}
+
+.news-text {
+  margin-top: -4px;
+  padding: 7% 5%;
+  background-color: #fff;
+  color: #0b192f;
+}
+
+.news-text h3 {
+  color: #0b192f;
+  font-weight: 100;
+  margin-top: 0;
+  font-size: 1.9vw;
+}
+
+.news-text p {
+  color: #637693;
+  font-size: 1.3vw;
+}
+
+.main-posts-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-direction: column-reverse;
+  width: 79%;
+}
+
+.main-posts {
+  display: flex;
+}
+
+.main-posts:nth-child(odd) {
+  flex-direction: row-reverse;
+  text-align: left;
+}
+
+.main-posts:nth-child(even) {
+  text-align: right;
+}
+
+.main-post-img {
+  width: 50%;
+}
+
+.main-post-img img:hover {
+  filter: opacity(50%);
+  cursor: pointer;
+}
+
+.main-post-description {
+  display: flex;
+  flex-direction: column;
+  width: 43%;
+}
+
+.main-post-description.descr-none-img {
+  display: flex;
+  flex-direction: column;
+  width: 93%;
+}
+
+.post-date {
+  width: 7%;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.7vw;
+}
+
+.post-date span {
+  font-size: 3.2vw;
+}
+
+.main-post-description.post-1,
+.post-date.post-1,
+.main-posts.post-1 {
+  background-color: #b71757;
+}
+
+.main-post-description.post-2,
+.post-date.post-2,
+.main-posts.post-2 {
+  background-color: #0d7e71;
+}
+
+.main-post-description.post-3,
+.post-date.post-3,
+.main-posts.post-3 {
+  background-color: #b1660e;
+}
+
+.main-post-description.post-4,
+.post-date.post-4,
+.main-posts.post-4 {
+  background-color: #d12767;
+}
+
+.main-post-description.post-5,
+.post-date.post-5,
+.main-posts.post-5 {
+  background-color: #2d95bb;
+}
+
+span {
+  text-align: center;
+}
+
+.main-post-description h2 {
+  padding: 5% 5%;
+  padding-bottom: 2.5%;
+  margin: 0;
+}
+
+.main-post-description p {
+  padding: 5% 5%;
+  padding-top: 2.5%;
+  margin: 0;
+}
+
+.main-post-description p {
+  font-size: 1.5vw;
+}
+
+.main-post-description h2 {
+  font-size: 3.2vw;
+}
+
+.post-date:hover,
+.post-date:hover+.main-post-description {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.main-post-description:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer {
+  padding: 1% 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #162b4d;
+}
+
+.footer-left {
+  width: 80%;
+}
+
+.footer-right {
+  width: 20%;
+}
+
+.footer-wrapper p {
+  opacity: .5;
+  font-size: 1.3vw;
+  padding: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .main-navigation {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+  }
+
+  .main-navigation-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 2px;
+    box-shadow: 0 6px #fff, 0 12px #fff;
+    background: #fff;
+  }
+
+  .site-navigation {
+    display: none;
+  }
+
+  .main-header-logo {
+    padding: 0;
+    padding-top: 55px;
+    margin: 0 auto;
+  }
+
+  .main-posts-wrapper .main-posts {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .main-posts-wrapper {
+    width: 59%;
+  }
+
+  .aside-wrapper {
+    width: 40%;
+  }
+
+  .main-post-img,
+  .main-post-description,
+  .main-post-description.descr-none-img,
+  .post-date {
+    width: 100%;
+  }
+
+  .main-post-description {
+    text-align: left;
+  }
+
+  .main-post-description p {
+    font-size: 2vw;
+  }
+
+  .main-post-description h2 {
+    font-size: 5vw;
+  }
+
+  .post-date {
+    font-size: 3vw;
+  }
+
+  .post-date span {
+    font-size: 6vw;
+  }
+
+  .news-text h3 {
+    font-size: 3.5vw;
+  }
+
+  .news-text p {
+    font-size: 2vw;
+  }
+
+  .footer-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-left p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .footer-right p {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .footer-wrapper p {
+    font-size: 1.6vw;
+  }
+
+  .post-date {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    flex-wrap: wrap;
+  }
+
+  .main-posts-wrapper {
+    width: 100%;
+  }
+
+  .aside-wrapper {
+    width: 100%;
+  }
+
+  article.news-wrapper {
+    max-width: none;
+  }
+
+  img {
+    min-width: 100%;
+  }
+
+  .main-post-description p {
+    font-size: 4vw;
+  }
+
+  .main-post-description h2 {
+    font-size: 8vw;
+  }
+
+  .post-date {
+    font-size: 5vw;
+  }
+
+  .post-date span {
+    font-size: 7vw;
+  }
+
+  .news-text h3 {
+    font-size: 5.5vw;
+  }
+
+  .news-text p {
+    font-size: 4vw;
+  }
+
+  .footer-wrapper p {
+    font-size: 4vw;
+  }
+}
