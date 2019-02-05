@@ -11,8 +11,8 @@ function discountCalculator() {
         alert(
             ' Price without discount: ' + price +
             '\r\n Discount: ' + discount + '%' +
-            '\r\n Price with discount: ' + discountPrice.toFixed(2) * 1 +
-            '\r\n Saved: ' + savedMoney.toFixed(2) * 1
+            '\r\n Price with discount: ' + +discountPrice.toFixed(2) +
+            '\r\n Saved: ' + +savedMoney.toFixed(2)
         );
     }
 }
