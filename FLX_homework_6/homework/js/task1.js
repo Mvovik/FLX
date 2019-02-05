@@ -9,7 +9,7 @@ function quadraticEquation() {
     } else {
         var d = (b * b) - 4 * a * c;
         if (d === 0) {
-            var x = -b / 2 * a;
+            var x = -b / (2 * a);
             alert('x = ' + x);
         } else if (d < 0) {
             alert('no solution')
