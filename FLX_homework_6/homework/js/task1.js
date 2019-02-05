@@ -4,7 +4,7 @@ function quadraticEquation() {
     var b = prompt('Please input' + ' "b" ' + 'value', '');
     var c = prompt('Please input' + ' "c" ' + 'value', '');
 
-    if (isNaN(a) || a === '' || a === 0 || isNaN(b) || b === '' || isNaN(c) || c === '') {
+    if (isNaN(a) || a === '' || a === '0' || isNaN(b) || b === '' || isNaN(c) || c === '') {
         alert('Invalid input data');
     } else {
         var d = (b * b) - 4 * a * c;
