@@ -7,7 +7,6 @@ let rangeOfNumbers = 5;
 let startPlay = confirm("Do you want to play a game?");
 if (startPlay) {
   let randomNumber = Math.round(Math.random() * rangeOfNumbers);
-  console.log(randomNumber);
   while (attemps > 0) {
 
     let userNumber = parseInt(prompt("Guess a number from: 0 to: " + rangeOfNumbers +
@@ -21,7 +20,6 @@ if (startPlay) {
       let letPlay = confirm("Congratulation! Your prize is: " + totalPrize + "$" + " Do you want to continue?");
       if (letPlay) {
         randomNumber = Math.round(Math.random() * rangeOfNumbers);
-        console.log(randomNumber);
         rangeOfNumbers *= 2;
         attemps = 4;
         scores *= 3;
@@ -46,6 +44,9 @@ if (startPlay) {
       let playAgain = confirm("Do you want to play a again?")
       if (playAgain) {
         attemps = 3;
+        totalPrize = 0;
+        rangeOfNumbers = 5;
+        scores = 10;
       } else {
         alert("You did not become a millionaire, but can.");
       }
