@@ -27,7 +27,6 @@ if (startPlay) {
         scores *= 3;
       } else {
         alert("Thank you for a game. Your prize is: " + totalPrize + "$");
-        // break;
         let playAgain = confirm("Do you want to play a again?")
         attemps = 4;
         totalPrize = 0;
