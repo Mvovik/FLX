@@ -1,47 +1,57 @@
-let randomNumber = 3;
-let scores = 0;
-// let attemps = 1;
-if (confirm("Do you want to play a game?")) {
+let attemps = 3;
+let maxAttempts = 3;
+let scores = 10;
+let totalPrize = 0;
+let rangeOfNumbers = 5;
 
-  let userNumber = Number(prompt("Guess a number from: 0 to: 5", ""));
+let startPlay = confirm("Do you want to play a game?");
+if (startPlay) {
+  let randomNumber = Math.round(Math.random() * rangeOfNumbers);
+  console.log(randomNumber);
+  while (attemps > 0) {
 
-  if (userNumber === randomNumber) { //1 attemp
-    scores = 10;
-    alert("Congratulation! Your prize is: " + scores)
+    let userNumber = parseInt(prompt("Guess a number from: 0 to: " + rangeOfNumbers +
+      "\n    Attemps left: " + attemps +
+      "\n    Total prize: " + totalPrize + "$" +
+      "\n    Possible prize: " + Math.floor(scores / Math.pow(2, maxAttempts - attemps)) + "$", "0"));
 
-  } else {
-    userNumber = Number(prompt("Guess a number from: 0 to: 5", ""));
+    if (userNumber === randomNumber) {
+      totalPrize += Math.floor(scores / Math.pow(2, maxAttempts - attemps));
 
-    if (userNumber === randomNumber) { //2 attemp
-      scores = 5;
-      alert("Congratulation! Your prize is: " + scores)
-
-    } else {
-      userNumber = Number(prompt("Guess a number from: 0 to: 5", ""));
-        if (userNumber === randomNumber) { //3 attemp
-          scores = 2;
-          alert("Congratulation! Your prize is: " + scores)
+      let letPlay = confirm("Congratulation! Your prize is: " + totalPrize + "$" + " Do you want to continue?");
+      if (letPlay) {
+        randomNumber = Math.round(Math.random() * rangeOfNumbers);
+        console.log(randomNumber);
+        rangeOfNumbers *= 2;
+        attemps = 4;
+        scores *= 3;
+      } else {
+        alert("Thank you for a game. Your prize is: " + totalPrize + "$");
+        // break;
+        let playAgain = confirm("Do you want to play a again?")
+        attemps = 4;
+        totalPrize = 0;
+        rangeOfNumbers = 5;
+        scores = 10;
+        if (playAgain) {
+          //
         } else {
-          scores = 0;
-          alert("Thank you for a game. Your prize is: " + scores)
+          break;
         }
+      }
+    }
+    attemps--;
+
+    if (userNumber !== randomNumber && attemps === 0) { // не вгадав і немає спроб
+      alert("Thank you for a game. Your prize is: " + totalPrize + "$")
+      let playAgain = confirm("Do you want to play a again?")
+      if (playAgain) {
+        attemps = 3;
+      } else {
+        alert("You did not become a millionaire, but can.");
+      }
     }
   }
-
-
-  // } else if (userNumber === randomNumber && attemps === 2) {
-  //   scores = 5;
-  //   attemps++; //2
-  //   alert("Congratulation! Your prize is: " + scores + " Attemps" + attemps)
-
-  // } else if (userNumber === randomNumber && attemps === 3) {
-  //   scores = 2;
-  //   attemps++; //3
-  //   alert("Congratulation! Your prize is: " + scores + " Attemps" + attemps)
-
-  // } else {
-  //   alert("Thank you for a game. Your prize is: " + scores + " Attemps" + attemps)
-  // }
 
 } else {
   alert("You did not become a millionaire, but can.");
