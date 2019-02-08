@@ -42,7 +42,7 @@ if (startPlay) {
     }
     attemps--;
 
-    if (userNumber !== randomNumber && attemps === 0) { // не вгадав і немає спроб
+    if (userNumber !== randomNumber && attemps === 0) {
       alert("Thank you for a game. Your prize is: " + totalPrize + "$")
       let playAgain = confirm("Do you want to play a again?")
       if (playAgain) {
