@@ -7,7 +7,7 @@ function getMin(a, b, c) {
       min = arr[i];
     }
   }
-  
+
   return min;
 }
 

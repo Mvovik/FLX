@@ -10,7 +10,7 @@ function formatTime(num) {
     hours = 0;
   }
 
- return days + " day(s) " + hours + " hour(s) " + minutes + " minute(s)";
+  return days + " day(s) " + hours + " hour(s) " + minutes + " minute(s)";
 }
 
 formatTime(120);
