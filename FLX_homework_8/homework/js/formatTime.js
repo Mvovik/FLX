@@ -15,4 +15,4 @@ function formatTime(num) {
 
 formatTime(120);
 formatTime(59);
-formatTime(3601); 
+formatTime(3601);
